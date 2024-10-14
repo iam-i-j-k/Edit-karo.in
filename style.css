@@ -200,30 +200,15 @@ section h2{
 .v1 p{
 	width: 50%;
 }
-.v1 .image{
-	display: flex;
-	align-items: center;
-	justify-content: end;
-	width: 50%;
-}
+
 .v2 p{
 	width: 50%;
 }
-.v2 .image{
-	display: flex;
-	align-items: center;
-	justify-content: end;
-	width: 50%;
-}
+
 .v3 p{
 	width: 50%;
 }
-.v3 .image{
-	display: flex;
-	align-items: center;
-	justify-content: end;
-	width: 50%;
-}
+
 .items img{
 	width: 250px;
 	height: 250px;
@@ -386,24 +371,35 @@ footer a:hover{
 		position: relative;
 		transform: translate(7%,0%);
 		height: max-content;
-		width: max-content;
 	}
 	.items{
 		display: block;
-		width: min-content;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		text-align: center;
 	}
 
 	.items .v1{
-		width: 33%;
+		width: 100%;
 		display: block;
 	}
 	.items .v2{
-		width: 33%;
+		width: 100%;
 		display: block;
 	}
 	.items .v3{
-		width: 33%;
+		width: 100%;
 		display: block;
+	}
+
+	.items .name{
+		width: 80%;
+		padding: 30px 0;
+	}
+
+	.items .quote{
+		width: 200px;
 	}
 
 	.items img{
@@ -416,12 +412,18 @@ footer a:hover{
 		font-size: 0.6rem;
 	}
 
-	footer .last{
+	
+	.last{
 		width: 100%;
 	}
 
-	.last h1{
-		font-size: 2rem;
+	.last .icon{
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.icon h1{
+		font-size: 1.5rem;
 	}
 
 	footer .links{
