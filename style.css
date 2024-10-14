@@ -365,6 +365,8 @@ footer a:hover{
 
 	.res-box{
 		width: max-content;
+		padding-right: 30px;
+		padding-left: 30px;
 	}
 
 	.grid-container{
@@ -377,13 +379,14 @@ footer a:hover{
 
 	iframe{
 		width: 250px;
+		height: 500px;
 	}
 
 	.ad iframe{
 		position: relative;
 		transform: translate(7%,0%);
-		height: 300px;
-		width: 250px;
+		height: max-content;
+		width: max-content;
 	}
 	.items{
 		display: block;
