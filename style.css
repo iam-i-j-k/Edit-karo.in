@@ -172,7 +172,7 @@ section h2{
 	width: 81%;
 	align-items: center;
 	justify-content: space-around;
-/* 	background-color: rgb(128, 128, 128, 0.3); */
+	background-color: rgb(128, 128, 128, 0.3);
 }
 
 .items strong{
@@ -376,14 +376,14 @@ footer a:hover{
 	}
 
 	iframe{
-		width: 300px;
+		width: 250px;
 	}
 
 	.ad iframe{
 		position: relative;
 		transform: translate(7%,0%);
-		height: 400px;
-		width: 300px;
+		height: 300px;
+		width: 250px;
 	}
 	.items{
 		display: block;
@@ -391,17 +391,21 @@ footer a:hover{
 	}
 
 	.items .v1{
+		width: 33%;
 		display: block;
 	}
 	.items .v2{
+		width: 33%;
 		display: block;
 	}
 	.items .v3{
+		width: 33%;
 		display: block;
 	}
 
-	footer h1{
-		font-size: 1rem;
+	.items img{
+		width: 100px;
+		height: 100px;
 	}
 
 	footer{
