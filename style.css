@@ -376,7 +376,7 @@ footer a:hover{
 	}
 
 	iframe{
-		width: 345px;
+		width: 300px;
 	}
 
 	.ad iframe{
@@ -398,6 +398,10 @@ footer a:hover{
 	}
 	.items .v3{
 		display: block;
+	}
+
+	footer h1{
+		font-size: 1rem;
 	}
 
 	footer{
