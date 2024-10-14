@@ -365,8 +365,6 @@ footer a:hover{
 
 	.res-box{
 		width: max-content;
-		padding-right: 30px;
-		padding-left: 30px;
 	}
 
 	.grid-container{
@@ -375,6 +373,8 @@ footer a:hover{
 
 	.res-box{
 		display: block;
+		padding-right: 30px;
+		padding-left: 30px;
 	}
 
 	iframe{
@@ -416,7 +416,16 @@ footer a:hover{
 		font-size: 0.6rem;
 	}
 
+	footer .last{
+		width: 100%;
+	}
+
+	.last h1{
+		font-size: 2rem;
+	}
+
 	footer .links{
+		width: 80%;
 		display: block;
 	}
 	
