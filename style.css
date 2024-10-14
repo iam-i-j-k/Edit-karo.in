@@ -172,7 +172,7 @@ section h2{
 	width: 81%;
 	align-items: center;
 	justify-content: space-around;
-	background-color: rgb(128, 128, 128, 0.3);
+/* 	background-color: rgb(128, 128, 128, 0.3); */
 }
 
 .items strong{
