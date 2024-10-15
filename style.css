@@ -59,11 +59,11 @@ nav{
 }
 
 .h a{
-	color: cornflowerblue;
+	color: rgb(32, 86, 187);
 }
 
 .navR a:hover{
-	color: cornflowerblue;
+	color: rgb(32, 86, 187);
 }
 
 main{
@@ -87,17 +87,20 @@ main a{
 	left: 10%;
 	padding: 20px 70px;
 	background-color: rgb(128, 128, 128, 0.7);
-	border: none;
 	font-family: 'Open Sans';
 	font-size: 1.4rem;
 	cursor: pointer;
 	text-decoration: none;
 	color: black;
+	transition: 0.25s ease-in-out;
+	border: none;
+	border-radius: 20px;
 }
 
 main a:hover{
-	background-color: rgb(88, 140, 236);
+	background-color: rgb(32, 86, 187);
 	color: white;
+	border-radius: 0;
 }
 
 section h2{
