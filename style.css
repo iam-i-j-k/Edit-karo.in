@@ -348,7 +348,7 @@ footer a:hover{
 	}
 	main h1{
 		width: 80%;
-		font-size: 1.8rem;
+		font-size: 2rem;
 	}
 	main a{
 		padding: 10px 30px;
@@ -361,6 +361,10 @@ footer a:hover{
 
 	.grid-container{
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.grid-item{
+		font-size: 1rem;
 	}
 
 	.res-box{
