@@ -35,28 +35,38 @@ nav{
 	padding: 0 10px;
 }
 
-.navR{
-	display: flex;
-	width: 50%;
-	align-items: center;
-	justify-content: center;
+.navR {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
 }
 
-.navR ul{
-	display: inline-block;
-	list-style: none;
+.navR ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    gap: 20px; 
 }
 
-.navR li{
-	display: inline-block;
+.navR ul li {
+    list-style: none;
+    margin-right: 20px; 
 }
-.navR a{
-	text-decoration: none;
-	font-size: 1.2rem;
-	margin-right: 50px;
-	font-weight: 500;
-	color: black;
+
+.navR ul li:last-child {
+    margin-right: 0; 
 }
+
+.navR a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    transition: color 0.3s;
+}
+
+
 
 .h a{
 	color: rgb(32, 86, 187);
@@ -94,7 +104,7 @@ main a{
 	color: black;
 	transition: 0.25s ease-in-out;
 	border: none;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
 main a:hover{
@@ -104,16 +114,14 @@ main a:hover{
 }
 
 section h2{
-	padding-left: 84px;
-	padding-top: 70px;
-	padding-bottom: 40px;
+	padding: 70px 0 40px 84px;
 	font-weight: 400;
 }
 
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	padding: 10px;
+	/* padding: 10px; */
 }
 .grid-item {
 	font-size: 1.5rem;
@@ -312,9 +320,12 @@ footer a:hover{
 	color: cornflowerblue;
 }
 
-@media only screen and (max-width: 992px){
+
+
+@media only screen and (max-width: 1024px){
 	nav{
-		display: block;
+		flex-direction: column;
+		box-shadow: 1px 1px 10px black;
 	}
 	.navL{
 		display: flex;
@@ -326,27 +337,25 @@ footer a:hover{
 		width: 15%;
 	}
 	.navL .logo{
-		font-size: 2rem;
+		font-size: 1.5rem;
 
 	}
 	.navR{
-		padding: 60px 0;
+		padding: 30px 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		width: 100%;
 	}
-	.navR ul{
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding-left: 60px;
-	}
 
-	.navR a{
-		font-size: 1.5rem;
-		margin-right: 0px;
-	}
+	.navR ul li{
+        margin: 5px 0;
+        padding: 0 10px;
+    }
+    .navR ul li a{
+        font-size: 1rem;
+    }
+
 	main{
 		height: 80vh;
 	}
@@ -356,36 +365,35 @@ footer a:hover{
 	}
 	main a{
 		padding: 10px 30px;
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 
 	.grid-container{
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		gap: 50px;
+		/* gap: 50px; */
 	}
 
 	.grid-item{
-		font-size: 0.6rem;
+		font-size: 1.5rem;
 	}
 
 	.res-box{
-		/* display: flex; */
+		display: flex;
 		align-items: center;
 		justify-content: space-around;
-		width: min-content;
-		padding-right: 30px;
-		padding-left: 60px;
-		gap: 50px;
+		width: 80vw;
+		padding-right: 10px;
+		padding-left: 10px;
 	}
 
 	.res-box h1{
 		padding: 0;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-weight: 500;
 	}
 
 	.res-box p{
-		font-size: 0.9rem;
+		font-size: 0.7rem;
 	}
 
 	.grid-item iframe{
@@ -400,11 +408,11 @@ footer a:hover{
 
 	.ad iframe{
 		position: relative;
-		height: 100vh;
-		width: 100%;
+		height: 60vh;
+		width: min-content;
 	}
 	.items{
-		display: block;
+		flex-direction: column;
 		width: 100%;
 		padding: 0;
 		margin: 0;
@@ -433,8 +441,9 @@ footer a:hover{
 	}
 
 	.items .quote{
+		font-size: 1rem;
 		margin: auto;
-		width: 300px;
+		width: fit-content;
 	}
 
 	.items img{
@@ -443,28 +452,189 @@ footer a:hover{
 	}
 
 	footer{
-		display: block;
+		flex-direction: column;
 		font-size: 0.9rem;
 	}
-
+	footer img{
+		width: 12%;
+	}
 	
 	.last{
 		width: 100%;
 	}
 
 	.last .icon{
-		justify-content: space-around;
+		justify-content: center;
 		width: 100%;
+	}
+
+	.icon h1{
+		font-size: 3rem;
+	}
+
+	footer .links{
+		padding-top: 30px;
+		width: 80%;
+		flex-direction: row;
+	}
+	
+}
+
+@media only screen and (max-width: 768px){
+	.navL .logo{
+		font-size: 1rem;
+	}
+	.navR{
+		padding: 10px 0;
+	}
+	.res-box{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 80vw;
+	}
+	.res-box h1{
+		padding: 0;
+		font-size: 2rem;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.res-box p{
+		font-size: 0.8rem;
+	}
+
+	footer img{
+		width: 12%;
+	}
+
+	.icon h1{
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (max-width: 425px){
+
+	.navL img{
+		width: 10%;
+	}
+	.navL .logo{
+		font-size: 0.8rem;
+
+	}
+	.navR{
+		padding: 0;
+	}
+
+	.navR ul li{
+        margin: 0;
+        padding: 5px;
+    }
+    .navR ul li a{
+        font-size: 0.7rem;
+    }
+
+	main h1{
+		font-size: 2rem;
+	}
+	section h2{
+		padding: 50px 20px;
+	}
+
+	.grid-item img{
+		width: 200px;
+		height: 200px;
+	}
+
+	.results h2{
+		padding: 50px 20px;
+	}
+
+	.res-box{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 80vw;
+	}
+	.res-box h1{
+		padding: 0;
+		font-size: 1.3rem;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.res-box p{
+		font-size: 0.8rem;
+	}
+
+	footer .links{
+		flex-direction: column;
+	}
+}
+
+@media only screen and (max-width: 375px){
+
+	.navR ul li{
+        margin: 0;
+        padding: 5px;
+    }
+    .navR ul li a{
+        font-size: 0.5rem;
+    }
+
+	main h1{
+		font-size: 1.6rem;
+	}
+	section h2{
+		padding: 50px 20px;
+	}
+
+	.grid-item p{
+		font-size: 1rem;
+	}
+
+	.grid-item img{
+		width: 150px;
+		height: 150px;
+	}
+
+	.results h2{
+		padding: 25px 10px;
+	}
+
+	.res-box{
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 80vw;
+	}
+	.res-box h1{
+		padding: 0;
+		font-size: 1rem;
+		font-weight: 500;
+		margin: 0;
+	}
+
+	.res-box p{
+		font-size: 0.6rem;
+	}
+
+	footer img{
+		width: 15%;
 	}
 
 	.icon h1{
 		font-size: 1.5rem;
 	}
 
-	footer .links{
-		width: 80%;
-		display: block;
+	.last p{
+		padding: 20px 0;
+		text-align: center;
+		font-size: 0.8rem;
 	}
-	
+
+	footer .links{
+		padding: 0;
+		font-size: 0.6rem;
+	}
 }
 
