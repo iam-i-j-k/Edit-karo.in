@@ -1,14 +1,14 @@
-* {
+*{
 	margin: 0;
 	padding: 0;
 }
-body {
-	font-family: 'Open Sans', sans-serif;
+body{
+	font-family: 'Open Sans';
 }
-html {
-	scroll-behavior: smooth;
+html{
+	scroll-behavior: smooth ;
 }
-nav {
+nav{
 	position: sticky;
 	top: 0;
 	width: 100%;
@@ -18,39 +18,39 @@ nav {
 	z-index: 1;
 }
 
-.navL {
+.navL{
 	display: flex;
 	width: 50%;
 }
 
-.navL .logo {
+.navL .logo{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 1.6rem;
 }
 
-.logo img {
+.logo img{
 	width: 20%;
 	padding: 0 10px;
 }
 
-.navR {
+.navR{
 	display: flex;
 	width: 50%;
 	align-items: center;
 	justify-content: center;
 }
 
-.navR ul {
+.navR ul{
 	display: inline-block;
 	list-style: none;
 }
 
-.navR li {
+.navR li{
 	display: inline-block;
 }
-.navR a {
+.navR a{
 	text-decoration: none;
 	font-size: 1.2rem;
 	margin-right: 50px;
@@ -58,21 +58,21 @@ nav {
 	color: black;
 }
 
-.h a {
+.h a{
 	color: rgb(32, 86, 187);
 }
 
-.navR a:hover {
+.navR a:hover{
 	color: rgb(32, 86, 187);
 }
 
-main {
+main{
 	width: 100%;
 	height: 100vh;
-	background-color: rgba(128, 128, 128, 0.3);
+	background-color: rgb(128, 128, 128, 0.3);
 }
 
-main h1 {
+main h1{
 	position: relative;
 	top: 10%;
 	left: 10%;
@@ -81,13 +81,13 @@ main h1 {
 	width: 37%;
 }
 
-main a {
+main a{
 	position: relative;
 	top: 15%;
 	left: 10%;
 	padding: 20px 70px;
-	background-color: rgba(128, 128, 128, 0.7);
-	font-family: 'Open Sans', sans-serif;
+	background-color: rgb(128, 128, 128, 0.7);
+	font-family: 'Open Sans';
 	font-size: 1.4rem;
 	cursor: pointer;
 	text-decoration: none;
@@ -97,13 +97,13 @@ main a {
 	border-radius: 20px;
 }
 
-main a:hover {
+main a:hover{
 	background-color: rgb(32, 86, 187);
 	color: white;
 	border-radius: 0;
 }
 
-section h2 {
+section h2{
 	padding-left: 84px;
 	padding-top: 70px;
 	padding-bottom: 40px;
@@ -120,19 +120,19 @@ section h2 {
 	text-align: center;
 }
 
-.grid-item p {
+.grid-item p{
 	padding: 50px;
 }
 
-.grid-item img {
+.grid-item img{
 	width: 250px;
 	height: 250px;
 	padding: 20px;
 	border-radius: 5px;
-	background-color: rgba(128, 128, 128, 0.3);
+	background-color: rgb(128, 128, 128, 0.3);
 }
 
-.res-box {
+.res-box{
 	padding: 54px 0 54px 54px;
 	padding-left: 84px;
 	margin: auto;
@@ -140,14 +140,14 @@ section h2 {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background-color: rgba(128, 128, 128, 0.3);
+	background-color: rgb(128, 128, 128, 0.3);
 }
 
-.results h2 {
+.results h2{
 	padding-left: 84px;
 }
 
-.res-box h1 {
+.res-box h1{
 	width: 50px;
 	height: 50px;
 	padding: 30px 0;
@@ -155,223 +155,312 @@ section h2 {
 	font-weight: 500;
 }
 
-.res-box p {
+.res-box p{
 	margin: auto;
 	font-size: 1rem;
 }
 
-.videos {
+.videos{
 	padding-left: 14px;
 }
 
-.ad {
+.ad{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.items {
+
+
+.items{
 	padding: 54px 0 54px 0;
 	padding-left: 84px;
 	margin: auto;
 	width: 81%;
 	align-items: center;
 	justify-content: space-around;
-	background-color: rgba(128, 128, 128, 0.3);
+	background-color: rgb(128, 128, 128, 0.3);
 }
 
-.items strong {
+.items strong{
 	padding: 20px 30px;
 	cursor: pointer;
 	font-size: 2rem;
 	font-weight: 300;
 }
 
-.items .v1, .items .v2, .items .v3 {
+.items .v1{
 	width: 80%;
 	display: flex;
 	padding-bottom: 30px;
 }
-.v1 p, .v2 p, .v3 p {
+.items .v2{
+	width: 80%;
+	display: flex;
+	padding-bottom: 30px;
+}
+.items .v3{
+	width: 80%;
+	display: flex;
+	padding-bottom: 30px;
+}
+.v1 p{
 	width: 50%;
 }
 
-.items img {
+.v2 p{
+	width: 50%;
+}
+
+.v3 p{
+	width: 50%;
+}
+
+.items img{
 	width: 250px;
 	height: 250px;
 	padding: 20px;
 	border-radius: 5px;
-	background-color: rgba(128, 128, 128, 0.3);
+	background-color: rgb(128, 128, 128, 0.3);
 }
 
-.items .quote {
+.items .quote{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
 	height: fit-content;
 	font-size: 1rem;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans';
 	position: relative;
 	text-wrap: wrap;
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-	background-color: rgba(128, 128, 128, 0.3);
+	background-color: rgb(128, 128, 128, 0.3);
 }
 
-footer {
+footer{
 	margin: 50px 0 0 0;
 	padding: 50px;
-	background-color: rgba(128, 128, 128, 0.3);
+	background-color: rgb(128, 128, 128, 0.3);
 }
 
-.last {
+.last{
 	width: 40%;
 	height: fit-content;
 }
 
-.last p {
+.last p{
 	padding: 20px;
 	text-align: center;
 	font-size: 1.2rem;
 }
 
-.icon {
+.icon{
 	padding: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.icon h1 {
+.icon h1{
 	padding-left: 20px;
-	font-size: 3rem;
+	font-size: 3rem;	
 }
 
-footer img {
+footer img{
 	width: 20%;
 }
 
-footer {
+footer{
 	display: flex;
 }
 
-.links {
+.links{
 	padding: 0 30px;
 	display: flex;
 	gap: 50px;
 	justify-content: space-between;
 }
 
-footer ul {
+footer ul{
 	list-style: none;
 }
 
-footer a {
+footer a{
 	text-decoration: none;
 	color: #000000;
 }
 
-footer h2 {
+footer h2{
 	padding-bottom: 20px;
 }
 
-footer .quick {
+footer .quick{
 	gap: 50px;
 	display: flex;
 }
 
-footer p {
+footer p{
 	font-size: 1.5rem;
 	padding-bottom: 20px;
 }
 
-footer li {
+footer li{
 	padding: 10px 0;
 }
 
-footer a:hover {
+footer a:hover{
 	color: cornflowerblue;
 }
 
-/* MEDIA QUERIES FOR RESPONSIVENESS */
-@media (max-width: 768px) {
-	.navL, .navR {
+@media only screen and (max-width: 650px){
+	nav{
+		display: block;
+	}
+	.navL{
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
-		justify-content: space-around;
 	}
-	.navR ul {
-		text-align: center;
+	.navL img{
+		width: 15%;
 	}
-	.navR a {
-		margin-right: 10px;
+	.navL .logo{
 		font-size: 1rem;
+
 	}
-	main h1 {
+	.navR{
+		padding: 30px 0 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	.navR a{
+		font-size: 0.7rem;
+		margin-right: 15px;
+	}
+	main{
+		height: 80vh;
+	}
+	main h1{
 		width: 80%;
 		font-size: 2rem;
 	}
-	main a {
-		padding: 15px 40px;
-		font-size: 1.1rem;
-	}
-	.grid-container {
-		grid-template-columns: auto auto;
-	}
-	.items {
-		width: 100%;
-	}
-	.res-box {
-		width: 100%;
-		flex-direction: column;
-		text-align: center;
-	}
-	footer {
-		flex-direction: column;
-		align-items: center;
-	}
-	footer .links {
-		flex-direction: column;
-	}
-	.footer p, .footer li {
-		text-align: center;
-	}
-}
-
-@media (max-width: 480px) {
-	.navL .logo {
-		font-size: 1.2rem;
-	}
-	.navR a {
-		font-size: 0.9rem;
-		margin-right: 5px;
-	}
-	main h1 {
-		font-size: 1.5rem;
-	}
-	main a {
+	main a{
 		padding: 10px 30px;
 		font-size: 1rem;
 	}
-	.grid-container {
-		grid-template-columns: auto;
+
+	.res-box{
+		width: max-content;
 	}
-	.grid-item img {
+
+	.grid-container{
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.grid-item{
+		font-size: 1rem;
+	}
+
+	.res-box{
+		align-items: center;
+		justify-content: space-around;
+		padding-right: 30px;
+		padding-left: 60px;
+		gap: 50px;
+	}
+
+	.res-box h1{
+		padding: 0;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+
+	.res-box p{
+		font-size: 0.6rem;
+	}
+
+	iframe{
+		width: 250px;
+		height: 500px;
+	}
+
+	.ad{
+		margin: 0;
+		padding: 0;
+	}
+
+	.ad iframe{
+		position: relative;
+		height: max-content;
+		width: max-content;
+	}
+	.items{
+		display: block;
 		width: 100%;
-		height: auto;
+		padding: 0;
+		margin: 0;
+		text-align: center;
 	}
-	.items strong {
+
+	.items .v1{
+		width: 100%;
+		display: block;
+		justify-content: center;
+		align-items: center;
+	}
+	.items .v2{
+		width: 100%;
+		display: block;
+	}
+	.items .v3{
+		width: 100%;
+		display: block;
+	}
+
+	.items .name{
+		width: 80%;
+		padding: 30px 0;
+		margin: auto;
+	}
+
+	.items .quote{
+		margin: auto;
+		width: 300px;
+	}
+
+	.items img{
+		width: 100px;
+		height: 100px;
+	}
+
+	footer{
+		display: block;
+		font-size: 0.6rem;
+	}
+
+	
+	.last{
+		width: 100%;
+	}
+
+	.last .icon{
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.icon h1{
 		font-size: 1.5rem;
 	}
-	.items img {
-		width: 100%;
-		height: auto;
+
+	footer .links{
+		width: 80%;
+		display: block;
 	}
-	.res-box h1 {
-		font-size: 2rem;
-	}
-	footer img {
-		width: 30%;
-	}
+	
 }
